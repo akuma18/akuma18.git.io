@@ -1,0 +1,196 @@
+:root{
+	--darkblack: #444444;
+	--orange: #ffa500 ;
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+
+}
+
+main{	
+	display: flex;
+	flex: 1;
+	text-align: center;
+
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+
+}
+
+nav a{
+	color: var(--white);
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px; /*Les elements se chevauches, pour eviter cela il faut la rendre display bloc juste pour cette elements*/
+	display: block;
+	text-align: center;
+	
+}
+
+nav a:hover {
+	background-color: var(--orange);
+	color: rgb(183, 46, 68);
+	text-decoration: none;
+}
+.wrapper {
+	
+	/*background-color: rgb(183, 46, 68);*/
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+.element-0 {
+	flex-direction: row-reverse;
+	display: flex;
+}
+.element-1 {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and ( min-width: 800px){
+	nav ul {
+		display: flex;
+		flex-direction: row;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+
+}
+
+nav {
+	width: 100%;
+	max-width: 950px;
+	margin:auto;
+}
+
+
+.element-0 {
+	flex-direction: row-reverse;
+	display: flex;
+}
+.element-1 {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.Conteneur-2{
+	display: flex;
+}
+
+nav > div {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	background-color: orange;
+	padding: 15px;
+	cursor: pointer;
+}
+
+nav > div:hover {
+	background-color: var(--darkblack);
+	color: rgb(183, 46, 68); 
+}*/
