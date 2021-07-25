@@ -1,28 +1,36 @@
 :root{
 	--darkblack: #444444;
+	--darkgray:#e2e2e2;
+	--white: #fff;
 	--orange: #ffa500 ;
+
 }
 
 
 body {
+	padding: 0;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	padding: 0;
-	margin: 0;
+
 
 }
 
-main{	
+main {	
 	display: flex;
 	flex: 1;
 	text-align: center;
 
 }
+nav	{
+	background: #032343 ;
+}
 
 nav ul {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
@@ -44,12 +52,17 @@ nav a:hover {
 	color: rgb(183, 46, 68);
 	text-decoration: none;
 }
+a.active {
+	 background-color: #4CAF50;
+}
+
 .wrapper {
 	
 	/*background-color: rgb(183, 46, 68);*/
 	width: 100%;
 	max-width: 950px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .element-0 {
@@ -62,11 +75,48 @@ nav a:hover {
 	flex-direction: column;
 }
 
+.TitreCarte{
+	color: var(--white);
+	text-transform: uppercase;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.section-1 {
+	/*background-color: blue;*/
+	margin-top: 20px;
+	padding: 20px;
+}
+.cardEntrées, .cardPlats, .cardDesserts, .cardBoissons {
+	background-color: var(--white);
+	border-radius: 7px;
+	box-shadow: 0 0 23px var(--darkgray);
+	margin-bottom: 20px;
+}
+
+.cardE-header, .cardP-header, .cardD-header, .cardB-header {
+	background-color: var(--orange);
+	border-radius: 7px 7px 0 0;
+	padding: 15px;
+	color: var(--white);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.cardE-body, .cardP-body, .cardD-body, .cardB-body {
+	padding: 15px;
+}
+
+
+
+
 @media screen and ( min-width: 800px){
 	nav ul {
 		display: flex;
 		flex-direction: row;
-	}	
+		padding: 0;
+		margin: 0;
+	}
 }
 
 
